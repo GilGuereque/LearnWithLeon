@@ -1,0 +1,124 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 55px;
+  background: black;
+  color: white;
+}
+body{
+  color: white;
+}
+h2{
+  color: black;
+}
+.bbc{
+  height: 55px;
+}
+nav *{
+  float: left;
+  width: 10%;
+  color: white;
+  display: block;
+}
+nav ul{
+  width: 50%;
+}
+nav form input{
+  width: 100%;
+}
+
+main + section > section{
+  width: 33.3333%;
+  float: left;
+}
+main > section{
+  width: 50%;
+  height: 500px;
+  float: left;
+  
+}
+main section + section section{
+  width: 50%;
+  height: 250px;
+  float: left;
+  
+  
+}
+section > h2{
+  clear: both;
+  width: 100%;
+  padding-top: 50px;
+  margin-top: 10px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.twopeople{
+  background-image: url('Israeland.jpg');
+}
+.americans{
+  background-image: url('Americansgo.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.onlineProd{
+  background-image: url('theonline.jpeg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.howWill{
+  background-image: url('Howwill.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.folkSinger{
+  background-image: url('Thefolk.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.joeByron{
+  background-image: url('Bidenand.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.women{
+  background-image: url('Womenform.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.donaldTrump{
+  background-image: url('Trumpsays.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}

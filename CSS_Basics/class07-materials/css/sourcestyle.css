@@ -1,0 +1,14 @@
+.bar,.Source {
+    list-style-type: none;
+    display: inline-block;
+    border-bottom: 50px;
+    padding-bottom: 25px;
+   
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-end;
+    
+}

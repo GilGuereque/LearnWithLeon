@@ -1,0 +1,72 @@
+/******************************************************************
+/* LAYOUT
+/******************************************************************/
+header{
+    display: inline;
+}
+nav,main,aside{
+    float: left;
+    width: 15%;
+    height: 100%;
+}
+nav span {
+    color: white;
+    clear: both;
+}
+nav img {
+    padding: 5px;
+    margin: 5px;
+    clear: both;
+}
+main {
+    width: 45%;
+}
+aside{
+    width: 25%;
+
+}
+a {
+    color: gray;
+}
+h1 {
+    font-weight: bold;
+}
+
+aside li {
+    border-bottom: 1px solid lightgray;
+}
+span{
+    font-weight: bold;
+}
+section {
+    width: 85%;
+    display: inline-block;
+    justify-content: flex-end;
+    align-self: flex-end;
+    float: right;
+    border-bottom: 1px solid lightgray;
+    clear: both;
+
+}
+
+.div3 {
+    float: right;
+    width: 30%;
+    padding-top: 20px;
+}
+
+div {
+    display: inline-block;
+    justify-content: flex-end;
+    align-self: flex-end;
+    padding-left: 280px;
+    float: left;
+    width: 10%; 
+
+}
+
+.div2 {
+    float: left;
+    width: 10%;
+    color: gray;
+}

@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+header,footer{
+    clear: both;
+    text-align: center;
+    margin-bottom: 30px;
+}
+body{
+    border: 5px solid rgb(0, 203, 74);
+    background-color: rgb(114, 202, 236);
+    color: white;
+    margin: 30px;
+    padding: 0 30px;
+}
+section{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    text-align: center;
+}
+.white{
+    color: white;
+}
+h1{
+    color: white;
+    font-style: italic;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2{
+    color: white;
+    font-size: 35px;
+}
+a{
+    color: rgb(0, 203, 74);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+span{
+    font-size: 20px;
+  }
+  p{
+    color: white;
+    font-size: 20px;
+}
+img {
+    float: right;
+    width: 200px;
+    height: 250px;
+  }
+section > nav{
+    text-align: center;
+}
+#Leon{
+    float: right;
+}

@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+header,footer{
+    border: 3px solid gray;
+    height: 100px;
+    clear: both;
+}
+#section1 {
+    width: 20%;
+    border: 3px solid gray;
+    height: 600px;
+    float: left;
+}
+#section2 {
+    width: 40%;
+    border: 3px solid gray;
+    height: 600px;
+    float: left;
+}
+#section3 {
+    width: 20%;
+    border: 3px solid gray;
+    height: 600px;
+    float: left;
+}
+#section4 {
+    width: 20%;
+    border: 3px solid gray;
+    height: 600px;
+    float: left;
+}

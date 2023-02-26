@@ -1,0 +1,119 @@
+Super focused on HTML as it is content, and careful with adding too much javascript or CSS 
+It is better to keep it content focused as many users also don't have high broadband
+If there is so much high level coding it could increase the bounce rate of end users 
+
+CSS 
+How do you link HTML file to CSS?
+<link rel="stylesheet" href="css/style.css">
+This link tag will go in the head of our html file; this link tag is saying you will
+leave from this html file and find the css in the href <section></section>
+Href in the css link tab goes by folder name/file name
+CSS Syntax (its own language)
+
+p {
+    color: red;
+}
+This whole line of code is a rule. Selector is the P. Color is the Property.
+Red is the property value. Color and red are the Declaration / declaration block.
+
+We can select all our paragraphs and change their color. Or change all the headers
+by selecting those.
+
+p{
+    color: red;
+    font-weight: bold;
+}
+A rule is broken down into 2 things: A selector and a declaration block. 
+Inside the curly braces is a declaration block. Which is broken up into declaration.
+"color: red;" is a declaration and also is "font-weight: bold;" which is broken up 
+into a property and property value.
+
+The whole point of CSS is to select something and then change what it looks like.
+P selector is selecting all paragraphs
+
+CSS stands for cascading style sheets. It is read from top to bottom. The declarations and rules further down
+below can override the stuff from above.
+
+p{
+    color: red;
+    font-weight: bold;
+}
+p{
+    color: blue;
+}
+^this means the paragraphs will actually be blue, but they will remain bold.
+
+LETS LEARN SOME STYLES
+Color:
+
+Word
+h1{
+    color: red;
+}
+Hexadecimal
+h2{
+    color: #FF00000;
+}
+RGBa
+p{
+    color: rgba(255,0,0,1);
+}
+HSLa
+span{
+    color: hsla(0, 100%, 50%,1);
+}
+you can use eyedropper browser extension to pick a color and it will give you all the codes for it.
+
+Font-Family 
+you need the actual font, then you need to tell css to use that font.
+
+CSS 
+p{
+    font-family: 'Source Sans Pro', 'Helvetica' sans-serif;
+}
+
+You can use google fonts to find fonts, choose the one you like and choose the weights. Then you can go to the 
+dashboard icon and copy the larger code for html which you will put it before your style sheet link. 
+And the css will go with your declaration block.
+
+Font-weight 
+you can go ahead and select a font weight from the fonts you selected if you wish to do so, you just add the
+declaration.
+p{
+    font-family: 'Source Sans Pro', 'Helvetica' sans-serif;
+    font-weight: 700;
+}
+
+how to use MDN? all you do is say the thing you wanna do, the language and then MDN
+so italic css mdn for example
+
+You can also select by relationship, parent > child
+If you use a > (right carat) then it must be a DIRECT child to the parent.
+If you just use a space after parent child or section p {} then even if its
+a grandchild or more it will still work.
+Sibling Relationships
+previous sibling + next sibling
+p + p {
+    color: red;
+}
+IDs are used for selecting distinct elements
+Only one id with the same value per document
+#idName 
+easier to select that unique element bc of the unique id associated with it
+
+Classes enable you to select multiple elements at the same time
+Multiple with same value allowed per document
+.classname 
+You can assign those multiple elements to one class then select that one class 
+to change those all how you like.
+
+Specificity overrides being lower in the cascade.
+section > p {
+    Color: red;
+}
+p{
+    color: blue;
+}
+The first section > p overrides the second rule bc it is more specific
+
+Lab is build simple site lab and read ch. 3,4,5 learn.shayhowe.com 
