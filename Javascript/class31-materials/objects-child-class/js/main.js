@@ -35,6 +35,7 @@ class Dog extends Animal{
 
 let simba = new Dog('Simba', 'Sheperd');
 
+//my additions:
 class Cat extends Animal{
     constructor(name, breed){
         super(name);
