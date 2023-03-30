@@ -31,7 +31,7 @@ const server = http.createServer((req, res) => {
   }
   else if (page == '/api') {
     if('student' in params){
-      if(params['student'] == 'leon' || params['student'] == 'Leon'){
+      if(params['student'] === 'leon' || params['student'] === 'Leon'){
         res.writeHead(200, {'Content-Type': 'application/json'})
         let flipResult = Math.ceil(Math.random() * 2) === 1 ? 'Heads' : 'Tails' ;
         const objToJson = {
@@ -42,7 +42,7 @@ const server = http.createServer((req, res) => {
         }
         res.end(JSON.stringify(objToJson));
       }//student = leon
-      else if (params['student'] == 'gil' || params['student'] == 'Gil'){
+      else if (params['student'] === 'gil' || params['student'] === 'Gil'){
         res.writeHead(200, {'Content-Type': 'application/json'})
         let flipResult = Math.ceil(Math.random() * 2) === 1 ? 'Heads' : 'Tails' ;
         const objToJson = {
@@ -53,7 +53,7 @@ const server = http.createServer((req, res) => {
         }
         res.end(JSON.stringify(objToJson));
       }//student = Gil
-      else if (params['student'] == 'norma' || params['student'] == 'Norma'){
+      else if (params['student'] === 'norma' || params['student'] === 'Norma'){
         res.writeHead(200, {'Content-Type': 'application/json'})
         let flipResult = Math.ceil(Math.random() * 2) === 1 ? 'Heads' : 'Tails' ;
         const objToJson = {
