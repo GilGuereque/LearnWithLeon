@@ -31,16 +31,41 @@ const server = http.createServer((req, res) => {
   }
   else if (page == '/api') {
     if('student' in params){
-      if(params['student']== 'leon'){
-        res.writeHead(200, {'Content-Type': 'application/json'});
+      if(params['student'] == 'leon' || params['student'] == 'Leon'){
+        res.writeHead(200, {'Content-Type': 'application/json'})
+        let flipResult = Math.ceil(Math.random() * 2) === 1 ? 'Heads' : 'Tails' ;
         const objToJson = {
           name: "leon",
           status: "Boss Man",
-          currentOccupation: "Baller"
+          currentOccupation: "Baller",
+          flip: flipResult
         }
         res.end(JSON.stringify(objToJson));
       }//student = leon
-      else if(params['student'] != 'leon'){
+      else if (params['student'] == 'gil' || params['student'] == 'Gil'){
+        res.writeHead(200, {'Content-Type': 'application/json'})
+        let flipResult = Math.ceil(Math.random() * 2) === 1 ? 'Heads' : 'Tails' ;
+        const objToJson = {
+          name: "Gil",
+          status: "The Struggler",
+          currentOccupation: "Business Systems Analyst - Perserverer on the side tho <.<",
+          flip: flipResult
+        }
+        res.end(JSON.stringify(objToJson));
+      }//student = Gil
+      else if (params['student'] == 'norma' || params['student'] == 'Norma'){
+        res.writeHead(200, {'Content-Type': 'application/json'})
+        let flipResult = Math.ceil(Math.random() * 2) === 1 ? 'Heads' : 'Tails' ;
+        const objToJson = {
+          name: "Norma",
+          status: "Mother & Guardian Angel",
+          currentOccupation: "Best Mom in the world",
+          flip: flipResult
+        }
+        res.end(JSON.stringify(objToJson));
+      }//student = Norma
+      //else if(params['student'] != 'leon'){
+      else if(params['student'] != 'leon' || params['student'] != 'gil' || params['student'] != 'norma' ){
         res.writeHead(200, {'Content-Type': 'application/json'});
         const objToJson = {
           name: "unknown",
