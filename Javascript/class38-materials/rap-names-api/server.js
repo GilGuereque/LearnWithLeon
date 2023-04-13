@@ -1,7 +1,8 @@
 // set up express to be stored in the app variable 
 const express = require('express');
 const app = express();
-const PORT = 8000
+const cors = require('cors');
+const PORT = 8000;
 
 // creating JSON object to query as an API
 const rappers = {
@@ -44,7 +45,7 @@ app.get('/api/:rapperName', (request,response) =>{
 });
 
 // create local server
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`The server is running on ${PORT}! You better go
      catch it!`);
 });
