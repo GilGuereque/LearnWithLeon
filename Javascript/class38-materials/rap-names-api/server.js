@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const PORT = 8000
 
+// creating JSON object to query as an API
 const rappers = {
     '21 Savage':{
     'age': 29,
@@ -33,8 +34,13 @@ app.get('/', (request, response) => {
 
 // get request to API to retrieve a JSON
 app.get('/api/:rapperName', (request,response) =>{
-    console.log(request.params.rapperName);
-    response.json(rappers);
+    const rappersName = request.params.rapperName.toLowerCase();
+    if(rappers[rappersName]){
+       response.json(rappers[rappersName]) 
+    }else{
+        response.json(rappers['Dylan'])
+    };
+    //response.json(rappers);
 });
 
 // create local server
