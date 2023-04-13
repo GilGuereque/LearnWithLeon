@@ -1,0 +1,22 @@
+{
+  "name": "rap-names-api",
+  "version": "1.0.0",
+  "description": "rap names api project for Learn with Leon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GilGuereque/LearnWithLeon.git"
+  },
+  "author": "Gil Guerequ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GilGuereque/LearnWithLeon/issues"
+  },
+  "homepage": "https://github.com/GilGuereque/LearnWithLeon#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
