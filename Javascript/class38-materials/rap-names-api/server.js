@@ -4,6 +4,8 @@ const app = express();
 const cors = require('cors');
 const PORT = 8000;
 
+app.use(cors())
+
 // creating JSON object to query as an API
 const rappers = {
     '21 Savage':{
