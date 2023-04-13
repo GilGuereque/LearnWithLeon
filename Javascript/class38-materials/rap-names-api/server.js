@@ -24,20 +24,21 @@ const rappers = {
     'birthName': 'Kendrick Lamar Duckworth',
     'birthLocation': 'Compton, California'
     },
-}
+};
 
 // create get request using express app variable to retreive a file
 app.get('/', (request, response) => {
-    response.sendFile(__dirname + '/index.html')
+    response.sendFile(__dirname + '/index.html');
 });
 
 // get request to API to retrieve a JSON
-app.get('/api', (request,response) =>{
-    response.json(rappers)
-})
+app.get('/api/:rapperName', (request,response) =>{
+    console.log(request.params.rapperName);
+    response.json(rappers);
+});
 
 // create local server
 app.listen(PORT, () => {
     console.log(`The server is running on ${PORT}! You better go
-     catch it!`)
+     catch it!`);
 });
